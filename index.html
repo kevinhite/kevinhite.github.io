@@ -65,7 +65,7 @@
     Author: @kevinhitedev
    */
    body, html {height:100%;margin:0;}
-   body {background:#000 url('https://avatars.githubusercontent.com/u/36213317?v=4') no-repeat center center fixed;color:#eee; }
+   body {background:#000 url('') no-repeat center center fixed;color:#eee; }
    /* -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -77,6 +77,7 @@
    nav.navbar ul.navbar-center {position:absolute;left:50%;transform:translatex(-50%);}	  
    nav.navbar ul {text-transform:uppercase;font-size:85%;letter-spacing:1pt;}
    nav.navbar ul li a {color:#000;font-weight:600;} nav.navbar ul li a:hover {border-bottom:4px solid #fff;}
+	  header img.logo {border-radius:100em;}
   </style>
   <script>            
     jQuery(document).ready(function() {
@@ -131,13 +132,14 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+	
+      <div class="contanier site-wrapper">
+         <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top transparency" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!">KEVINHITE.com</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
+     		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+     		   <div class="collapse navbar-collapse" id="navbarResponsive">
+      		     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#bioModal" title="Home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myStoryModal" title="Read Kevin's Bio">My Story</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myNewsModal" title="Kevin's Latest News">News</a></li>
@@ -145,11 +147,18 @@
                         <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myEventsModal" title="Check Out Kevin's Events">Events</a></li>
                         <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myMediaModal" title="View Kevin's Media">Media</a></li>
                     </ul>
-                </div>
+                  </div>
             </div>
         </nav>
-        <!-- Page Content-->
-        <section>
+	<header class="mx-auto header site-header" id="header" itemprop="header" name="header" role="header">
+    	  <h1 class="title site-title text-center" id="title" itemprop="title" name="title" role="title">
+     	    <a class="site-url url" href="/" id="url" itemprop="url" title="KEVIN HITE" role="url">
+	      <img alt="KEVIN HITE" class="logo" src="https://avatars.githubusercontent.com/u/36213317?v=4" />
+  	    </a>
+	  </h1>
+	</header>
+	<main class="mx-auto main site-main" id="main" itemprop="main" name="main" role="">
+         <section>
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-6">
@@ -158,22 +167,22 @@
                     </div>
                 </div>
             </div>
-        </section>
-     <footer class="mx-auto mb-5 mt-5 footer site-footer" id="footer" itemprop="footer" name="footer" role="">
-    <p class="m-0 socialmedia-links text-center" id="" itemprop="" name="" role="">
-     <a class="socialmedia-link" href="https://linkedin.com/in/kevinhite/" title="KEVINHITE.DEV on LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>&nbsp;
-     <a class="socialmedia-link" href="https://youtube.com/kevhite.mp4/" title="KEVIN HITE on YouTube"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>&nbsp;
-     <a class="socialmedia-link" href="https://instagram.com/kevhite.jpg/" title="KEVIN HITE on Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>&nbsp;
-     <a class="socialmedia-link" href="https://twitter.com/kevhite/" title="KEVIN HITE on Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-    </p> 
-    <p class="m-0 credit text-center">
-     <span class="bootstrap"><small>Made with <a href="https://getbootstrap.com/" title="Bootstrap 5.3.0">Bootstrap 5.3.0</a>, </span>
-     <span class="githubpages"><a href="https://pages.github.com" title="GitHub Pages">GitHub Pages</a>, and </span>
-     <span class="forkawesome"><a href="https://forkaweso.me/" title="Fork Awesome 1.2.0">Fork Awesome 1.2.0</a></small></span>
-    </p>
-   </footer>
-	
-		
+         </section>
+	</main>
+     	<footer class="mx-auto mb-5 mt-5 footer site-footer" id="footer" itemprop="footer" name="footer" role="">
+      	 <p class="m-0 socialmedia-links text-center" id="" itemprop="" name="" role="">
+       	  <a class="socialmedia-link" href="https://linkedin.com/in/kevinhite/" title="KEVINHITE.DEV on LinkedIn"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>&nbsp;
+          <a class="socialmedia-link" href="https://youtube.com/kevhite.mp4/" title="KEVIN HITE on YouTube"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>&nbsp;
+          <a class="socialmedia-link" href="https://instagram.com/kevhite.jpg/" title="KEVIN HITE on Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>&nbsp;
+          <a class="socialmedia-link" href="https://twitter.com/kevhite/" title="KEVIN HITE on Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+         </p> 
+         <p class="m-0 credit text-center">
+       	  <span class="bootstrap"><small>Made with <a href="https://getbootstrap.com/" title="Bootstrap 5.3.0">Bootstrap 5.3.0</a>, </span>
+          <span class="githubpages"><a href="https://pages.github.com" title="GitHub Pages">GitHub Pages</a>, and </span>
+          <span class="forkawesome"><a href="https://forkaweso.me/" title="Fork Awesome 1.2.0">Fork Awesome 1.2.0</a></small></span>
+         </p>
+        </footer>
+
   <div class="myStory modal-dialog modal-dialog-centered modal-dialog-scrollable">
 
    <div class="modal fade" id="myStoryModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
